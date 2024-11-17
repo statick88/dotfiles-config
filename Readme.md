@@ -24,7 +24,7 @@ Este repositorio almacena configuraciones personalizadas para mi entorno en Linu
 Clona este repositorio en tu máquina:
 
 ```
-git clone https://github.com/statick88/hyprland.git
+git clone https://github.com/statick88/dotfiles-config.git
 ```
 
 2. Copia los Archivos de Configuración
@@ -34,19 +34,19 @@ Para aplicar las configuraciones, debes copiar los archivos desde el repositorio
 **Zsh**: Copia el archivo .zshrc a tu directorio home:
 
 ```bash
-cp hyprland/.zshrc ~/.zshrc
+cp dotfiles-config/.zshrc ~/.zshrc
 ```
 
 **Neovim**: Copia la carpeta nvim a ~/.config/:
 
 ```bash
-cp -r hyprland/.config/nvim ~/.config/
+cp -r dotfiles-config/.config/nvim ~/.config/
 ```
 
 **Hyprland**: Copia la carpeta hypr a ~/.config/:
 
 ```bash
-cp -r hyprland/.config/hypr ~/.config/
+cp -r dotfiles-config/.config/hypr ~/.config/
 ```
 
 3. Recarga las Configuraciones
