@@ -1,21 +1,24 @@
--- nvim v0.8.0
 return {
-  "kdheepak/lazygit.nvim",
-  lazy = true,
-  cmd = {
-    "LazyGit",
-    "LazyGitConfig",
-    "LazyGitCurrentFile",
-    "LazyGitFilter",
-    "LazyGitFilterCurrentFile",
-  },
-  -- optional for floating window border decoration
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-  },
-  -- setting the keybinding for LazyGit with 'keys' is recommended in
-  -- order to load the plugin when the command is run for the first time
-  keys = {
-    { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+  {
+    "MunifTanjim/prettier.nvim",
+    dependencies = {
+      "jose-elias-alvarez/null-ls.nvim",
+    },
+    config = function()
+      require("prettier").setup({
+        bin = "prettier", -- Usando 'prettier' en lugar de 'prettierd'
+        filetypes = {
+          "javascript",
+          "typescript",
+          "css",
+          "scss",
+          "html",
+          "json",
+          "yaml",
+          "markdown",
+          "graphql",
+        },
+      })
+    end,
   },
 }
